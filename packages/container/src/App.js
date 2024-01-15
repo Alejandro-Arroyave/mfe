@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import { StylesProvider, createGenerateClassName } from "@material-ui/core";
 
 const generateClassName = createGenerateClassName({
-  productionPrefix: "co",
+  productionPrefix: "con",
 });
 
 const App = () => {
