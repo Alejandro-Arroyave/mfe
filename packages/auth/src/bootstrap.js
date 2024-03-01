@@ -18,6 +18,7 @@ const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
   ReactDOM.render(<App history={history} />, el);
 
   const onParentNavigate = ({ pathname: nextPathname }) => {
+    console.log(nextPathname);
     if (nextPathname) {
       history.push(nextPathname);
     }
@@ -30,7 +31,7 @@ const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
 
 // Two scenarios: Development or isolation call immediately
 if (process.env.NODE_ENV === "development") {
-  const devRoot = document.querySelector("#_marketing-dev-root");
+  const devRoot = document.querySelector("#_auth-dev-root");
 
   if (devRoot) mount(devRoot, { defaultHistory: createBrowserHistory() });
 }
