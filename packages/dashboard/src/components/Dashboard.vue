@@ -289,6 +289,8 @@ export default {
         { name: 'London', code: 'LDN' },
         { name: 'Istanbul', code: 'IST' },
         { name: 'Paris', code: 'PRS' },
+        { name: 'Barcelona', code: 'BCL' },
+        { name: 'Berlin', code: 'BR' },
       ],
       dropdownCity: null,
       options: {
