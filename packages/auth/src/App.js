@@ -1,8 +1,11 @@
-import { StylesProvider, createGenerateClassName } from "@material-ui/core";
 import React from "react";
+import { Router, Route, Switch } from "react-router-dom";
+import {
+  StylesProvider,
+  createGenerateClassName,
+} from "@material-ui/core/styles";
 import SignIn from "./components/Signin";
 import SignUp from "./components/Signup";
-import { Router, Route, Switch } from "react-router-dom/cjs/react-router-dom";
 
 const generateClassName = createGenerateClassName({
   productionPrefix: "au",
